@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+
+
+  public showHome: boolean;
+  public showExperience: boolean;
+  public showAbout: boolean;
+  public showContact: boolean;
+
 }

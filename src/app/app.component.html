@@ -1,22 +1,5 @@
-<nav class="navbar navbar-expand navbar-light">
-  <a  class="navbar-brand" routerLink="/home">SH</a>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a  class="nav-link" routerLink="/experience">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a  class="nav-link" routerLink="/about">About</a>
-      </li>
-      <li class="nav-item">
-        <a  class="nav-link" routerLink="/contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<app-home *ngIf ="showHome && !showExperience && !showAbout && !showContact"></app-home>
+<app-experience *ngIf="!showHome && showExperience && !showAbout && !showContact"></app-experience>
+<app-about *ngIf="!showHome && !showExperience && showAbout && !showContact"></app-about>
+<app-contact *ngIf="!showHome && !showExperience && !showAbout && showContact"></app-contact>
 <router-outlet></router-outlet>

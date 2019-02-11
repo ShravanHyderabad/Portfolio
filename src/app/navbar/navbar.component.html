@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand navbar-dark transparent">
+  <a  class="navbar-brand" routerLink="/home" (click) = showHome()>SH</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a  class="nav-link" routerLink="/experience" (click) = showExperience()>Experience</a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" routerLink="/about" (click) = showAbout()>About</a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link" routerLink="/contact" (click) = showContact()>Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
